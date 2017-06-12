@@ -277,7 +277,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Fornecedor` (
   `id_fornecedor` INT NOT NULL COMMENT ' Valor único do identificador de uma equipe de reparo. \n',
   `nome_fornecedor` VARCHAR(45) NOT NULL COMMENT ' Descreve o nome do fornecedor. Ex: Empresa X\n',
   `descricao_fornecedor` VARCHAR(45) NULL COMMENT 'Descreve o que o fornecedor fornece por exemplo.\n Ex: Fornece cimentos do tipo X etc.',
-  `cnpj_fornecedor` INT UNSIGNED NOT NULL COMMENT ' Número único que identifica uma pessoa jurídica e \noutros tipos de arranjo jurídico sem personalidade jurídica.\n',
+  `cnpj_fornecedor` VARCHAR(45) NOT NULL COMMENT ' Número único que identifica uma pessoa jurídica e \noutros tipos de arranjo jurídico sem personalidade jurídica.\n',
   PRIMARY KEY (`id_fornecedor`))
 ENGINE = InnoDB;
 
