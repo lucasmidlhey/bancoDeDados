@@ -217,7 +217,7 @@ VALUES (4, 10 , 3, 'buraco grande na rua');
 INSERT INTO  `mydb`.`OrdemTrabalho` (`status_reparo`, `horas_de_trabalho`, `quantidade_material_enchimento`, 
 								  `custo_reparo`, `Buraco_id_buraco`, `EquipeReparo_id_equipe_reparo`, 
 								  `MaterialEnchimento_id_material_enchimento`) 
-VALUES ( 'Em andamento', '15', 100, 20100, 1, 1, 2);
+VALUES ( 'Em andamento', '15', 100, 20100, 1, 1, 1);
 
 INSERT INTO `mydb`.`OrdemTrabalho` (`status_reparo`, `horas_de_trabalho`, `quantidade_material_enchimento`, 
 								  `custo_reparo`, `Buraco_id_buraco`, `EquipeReparo_id_equipe_reparo`, 
@@ -226,7 +226,7 @@ VALUES ('Concluída', '50', 200, 1400, 2, 2, 1);
 
 INSERT INTO `mydb`.`OrdemTrabalho` (`status_reparo`, `horas_de_trabalho`, `quantidade_material_enchimento`, 
 								`custo_reparo`, `Buraco_id_buraco`, `EquipeReparo_id_equipe_reparo`, `MaterialEnchimento_id_material_enchimento`)
-VALUES ('Concluída', '70', 200, 2000, 3, 3, 3);
+VALUES ('Concluída', '70', 200, 2000, 3, 3, 1);
 
 -- insert values in table Naturalidade
 
@@ -333,4 +333,14 @@ INSERT INTO `mydb`.`Dependente` (`nome_dependente`, `Funcionario_id_funcionario`
 VALUES ('Mariazinha', '2');
 INSERT INTO `mydb`.`Dependente` (`nome_dependente`, `Funcionario_id_funcionario`) 
 VALUES ('Pedrinho', '3');
+
+-- insert values in table Dano
+INSERT INTO `mydb`.`Dano` (`valor_dano`, `TipoDano_id_tipo_dano`) VALUES ('500', '1');
+INSERT INTO `mydb`.`Dano` (`valor_dano`, `TipoDano_id_tipo_dano`) VALUES ('200', '2');
+INSERT INTO `mydb`.`Dano` (`valor_dano`, `TipoDano_id_tipo_dano`) VALUES ('300', '3');
+
+-- insert values in table MaterialEnchimento
+INSERT INTO `mydb`.`MaterialEnchimento` (`custo_material_de_enchimento`, `TipoMaterialEnchimento_id_tipo_material_enchimento`) VALUES ('200', '1');
+INSERT INTO `mydb`.`MaterialEnchimento` (`custo_material_de_enchimento`, `TipoMaterialEnchimento_id_tipo_material_enchimento`) VALUES ('100', '1');
+INSERT INTO `mydb`.`MaterialEnchimento` (`custo_material_de_enchimento`, `TipoMaterialEnchimento_id_tipo_material_enchimento`) VALUES ('300', '3');
 

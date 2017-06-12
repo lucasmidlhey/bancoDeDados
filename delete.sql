@@ -110,7 +110,3 @@ DELETE FROM `mydb`.`MaterialEnchimento_has_Fornecedor` WHERE `MaterialEnchimento
 DELETE FROM `mydb`.`Equipamento_has_Fornecedor` WHERE `Equipamento_id_equipamento`='3';
 DELETE FROM `mydb`.`Equipamento_has_Fornecedor` WHERE `Equipamento_id_equipamento`='2';
 
-
-
-
-
